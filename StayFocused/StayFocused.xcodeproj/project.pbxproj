@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		171517EF29DC8BE80024E008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171517EE29DC8BE80024E008 /* AppDelegate.swift */; };
+		171517F129DC8BE80024E008 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171517F029DC8BE80024E008 /* SceneDelegate.swift */; };
+		171517F429DC8BE80024E008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171517F229DC8BE80024E008 /* LaunchScreen.storyboard */; };
+		171517F729DC8BE80024E008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171517F529DC8BE80024E008 /* Main.storyboard */; };
+		1715180029DC8BE80024E008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171517FF29DC8BE80024E008 /* AppDelegate.swift */; };
+		1715180329DC8BE80024E008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1715180129DC8BE80024E008 /* Main.storyboard */; };
+		1715180A29DC8BE80024E008 /* StayFocused Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1715180929DC8BE80024E008 /* StayFocused Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1715181429DC8BE80024E008 /* StayFocused Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1715181329DC8BE80024E008 /* StayFocused Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1715181A29DC8BE80024E008 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 171517D529DC8BE60024E008 /* Main.html */; };
+		1715181B29DC8BE80024E008 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 171517D529DC8BE60024E008 /* Main.html */; };
+		1715181C29DC8BE80024E008 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 171517D729DC8BE60024E008 /* Icon.png */; };
+		1715181D29DC8BE80024E008 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 171517D729DC8BE60024E008 /* Icon.png */; };
+		1715181E29DC8BE80024E008 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 171517D829DC8BE60024E008 /* Style.css */; };
+		1715181F29DC8BE80024E008 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 171517D829DC8BE60024E008 /* Style.css */; };
+		1715182029DC8BE80024E008 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 171517D929DC8BE60024E008 /* Script.js */; };
+		1715182129DC8BE80024E008 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 171517D929DC8BE60024E008 /* Script.js */; };
+		1715182229DC8BE80024E008 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171517DA29DC8BE60024E008 /* ViewController.swift */; };
+		1715182329DC8BE80024E008 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171517DA29DC8BE60024E008 /* ViewController.swift */; };
+		1715182429DC8BE80024E008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171517DB29DC8BE80024E008 /* Assets.xcassets */; };
+		1715182529DC8BE80024E008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171517DB29DC8BE80024E008 /* Assets.xcassets */; };
+		1715182629DC8BE80024E008 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171517DD29DC8BE80024E008 /* SafariWebExtensionHandler.swift */; };
+		1715182729DC8BE80024E008 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171517DD29DC8BE80024E008 /* SafariWebExtensionHandler.swift */; };
+		1715182829DC8BE80024E008 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 171517DF29DC8BE80024E008 /* _locales */; };
+		1715182929DC8BE80024E008 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 171517DF29DC8BE80024E008 /* _locales */; };
+		1715182A29DC8BE80024E008 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 171517E029DC8BE80024E008 /* images */; };
+		1715182B29DC8BE80024E008 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 171517E029DC8BE80024E008 /* images */; };
+		1715182C29DC8BE80024E008 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 171517E129DC8BE80024E008 /* manifest.json */; };
+		1715182D29DC8BE80024E008 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 171517E129DC8BE80024E008 /* manifest.json */; };
+		1715182E29DC8BE80024E008 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 171517E229DC8BE80024E008 /* background.js */; };
+		1715182F29DC8BE80024E008 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 171517E229DC8BE80024E008 /* background.js */; };
+		1715183029DC8BE80024E008 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 171517E329DC8BE80024E008 /* content.js */; };
+		1715183129DC8BE80024E008 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 171517E329DC8BE80024E008 /* content.js */; };
+		1715183229DC8BE80024E008 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 171517E429DC8BE80024E008 /* popup.html */; };
+		1715183329DC8BE80024E008 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 171517E429DC8BE80024E008 /* popup.html */; };
+		1715183429DC8BE80024E008 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 171517E529DC8BE80024E008 /* popup.css */; };
+		1715183529DC8BE80024E008 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 171517E529DC8BE80024E008 /* popup.css */; };
+		1715183629DC8BE80024E008 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 171517E629DC8BE80024E008 /* popup.js */; };
+		1715183729DC8BE80024E008 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 171517E629DC8BE80024E008 /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1715180B29DC8BE80024E008 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 171517CF29DC8BE60024E008 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1715180829DC8BE80024E008;
+			remoteInfo = "StayFocused Extension (iOS)";
+		};
+		1715181529DC8BE80024E008 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 171517CF29DC8BE60024E008 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1715181229DC8BE80024E008;
+			remoteInfo = "StayFocused Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1715183D29DC8BE80024E008 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1715180A29DC8BE80024E008 /* StayFocused Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1715184429DC8BE80024E008 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1715181429DC8BE80024E008 /* StayFocused Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		171517D629DC8BE60024E008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		171517D729DC8BE60024E008 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		171517D829DC8BE60024E008 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		171517D929DC8BE60024E008 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		171517DA29DC8BE60024E008 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		171517DB29DC8BE80024E008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		171517DD29DC8BE80024E008 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		171517DF29DC8BE80024E008 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		171517E029DC8BE80024E008 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		171517E129DC8BE80024E008 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		171517E229DC8BE80024E008 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		171517E329DC8BE80024E008 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		171517E429DC8BE80024E008 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		171517E529DC8BE80024E008 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		171517E629DC8BE80024E008 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		171517EB29DC8BE80024E008 /* StayFocused.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StayFocused.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		171517EE29DC8BE80024E008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		171517F029DC8BE80024E008 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		171517F329DC8BE80024E008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		171517F629DC8BE80024E008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		171517F829DC8BE80024E008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		171517FD29DC8BE80024E008 /* StayFocused.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StayFocused.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		171517FF29DC8BE80024E008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1715180229DC8BE80024E008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1715180429DC8BE80024E008 /* StayFocused.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StayFocused.entitlements; sourceTree = "<group>"; };
+		1715180929DC8BE80024E008 /* StayFocused Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "StayFocused Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1715180E29DC8BE80024E008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1715181329DC8BE80024E008 /* StayFocused Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "StayFocused Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1715181829DC8BE80024E008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1715181929DC8BE80024E008 /* StayFocused.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StayFocused.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		171517E829DC8BE80024E008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171517FA29DC8BE80024E008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1715180629DC8BE80024E008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1715181029DC8BE80024E008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		171517CE29DC8BE60024E008 = {
+			isa = PBXGroup;
+			children = (
+				171517D329DC8BE60024E008 /* Shared (App) */,
+				171517DC29DC8BE80024E008 /* Shared (Extension) */,
+				171517ED29DC8BE80024E008 /* iOS (App) */,
+				171517FE29DC8BE80024E008 /* macOS (App) */,
+				1715180D29DC8BE80024E008 /* iOS (Extension) */,
+				1715181729DC8BE80024E008 /* macOS (Extension) */,
+				171517EC29DC8BE80024E008 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		171517D329DC8BE60024E008 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				171517DA29DC8BE60024E008 /* ViewController.swift */,
+				171517DB29DC8BE80024E008 /* Assets.xcassets */,
+				171517D429DC8BE60024E008 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		171517D429DC8BE60024E008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				171517D529DC8BE60024E008 /* Main.html */,
+				171517D729DC8BE60024E008 /* Icon.png */,
+				171517D829DC8BE60024E008 /* Style.css */,
+				171517D929DC8BE60024E008 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		171517DC29DC8BE80024E008 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				171517DD29DC8BE80024E008 /* SafariWebExtensionHandler.swift */,
+				171517DE29DC8BE80024E008 /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		171517DE29DC8BE80024E008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				171517DF29DC8BE80024E008 /* _locales */,
+				171517E029DC8BE80024E008 /* images */,
+				171517E129DC8BE80024E008 /* manifest.json */,
+				171517E229DC8BE80024E008 /* background.js */,
+				171517E329DC8BE80024E008 /* content.js */,
+				171517E429DC8BE80024E008 /* popup.html */,
+				171517E529DC8BE80024E008 /* popup.css */,
+				171517E629DC8BE80024E008 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		171517EC29DC8BE80024E008 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				171517EB29DC8BE80024E008 /* StayFocused.app */,
+				171517FD29DC8BE80024E008 /* StayFocused.app */,
+				1715180929DC8BE80024E008 /* StayFocused Extension.appex */,
+				1715181329DC8BE80024E008 /* StayFocused Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		171517ED29DC8BE80024E008 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				171517EE29DC8BE80024E008 /* AppDelegate.swift */,
+				171517F029DC8BE80024E008 /* SceneDelegate.swift */,
+				171517F229DC8BE80024E008 /* LaunchScreen.storyboard */,
+				171517F529DC8BE80024E008 /* Main.storyboard */,
+				171517F829DC8BE80024E008 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		171517FE29DC8BE80024E008 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				171517FF29DC8BE80024E008 /* AppDelegate.swift */,
+				1715180129DC8BE80024E008 /* Main.storyboard */,
+				1715180429DC8BE80024E008 /* StayFocused.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		1715180D29DC8BE80024E008 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				1715180E29DC8BE80024E008 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		1715181729DC8BE80024E008 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				1715181829DC8BE80024E008 /* Info.plist */,
+				1715181929DC8BE80024E008 /* StayFocused.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		171517EA29DC8BE80024E008 /* StayFocused (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1715183E29DC8BE80024E008 /* Build configuration list for PBXNativeTarget "StayFocused (iOS)" */;
+			buildPhases = (
+				171517E729DC8BE80024E008 /* Sources */,
+				171517E829DC8BE80024E008 /* Frameworks */,
+				171517E929DC8BE80024E008 /* Resources */,
+				1715183D29DC8BE80024E008 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1715180C29DC8BE80024E008 /* PBXTargetDependency */,
+			);
+			name = "StayFocused (iOS)";
+			productName = "StayFocused (iOS)";
+			productReference = 171517EB29DC8BE80024E008 /* StayFocused.app */;
+			productType = "com.apple.product-type.application";
+		};
+		171517FC29DC8BE80024E008 /* StayFocused (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1715184529DC8BE80024E008 /* Build configuration list for PBXNativeTarget "StayFocused (macOS)" */;
+			buildPhases = (
+				171517F929DC8BE80024E008 /* Sources */,
+				171517FA29DC8BE80024E008 /* Frameworks */,
+				171517FB29DC8BE80024E008 /* Resources */,
+				1715184429DC8BE80024E008 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1715181629DC8BE80024E008 /* PBXTargetDependency */,
+			);
+			name = "StayFocused (macOS)";
+			productName = "StayFocused (macOS)";
+			productReference = 171517FD29DC8BE80024E008 /* StayFocused.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1715180829DC8BE80024E008 /* StayFocused Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1715183A29DC8BE80024E008 /* Build configuration list for PBXNativeTarget "StayFocused Extension (iOS)" */;
+			buildPhases = (
+				1715180529DC8BE80024E008 /* Sources */,
+				1715180629DC8BE80024E008 /* Frameworks */,
+				1715180729DC8BE80024E008 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StayFocused Extension (iOS)";
+			productName = "StayFocused Extension (iOS)";
+			productReference = 1715180929DC8BE80024E008 /* StayFocused Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1715181229DC8BE80024E008 /* StayFocused Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1715184129DC8BE80024E008 /* Build configuration list for PBXNativeTarget "StayFocused Extension (macOS)" */;
+			buildPhases = (
+				1715180F29DC8BE80024E008 /* Sources */,
+				1715181029DC8BE80024E008 /* Frameworks */,
+				1715181129DC8BE80024E008 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StayFocused Extension (macOS)";
+			productName = "StayFocused Extension (macOS)";
+			productReference = 1715181329DC8BE80024E008 /* StayFocused Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		171517CF29DC8BE60024E008 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					171517EA29DC8BE80024E008 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					171517FC29DC8BE80024E008 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					1715180829DC8BE80024E008 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					1715181229DC8BE80024E008 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 171517D229DC8BE60024E008 /* Build configuration list for PBXProject "StayFocused" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 171517CE29DC8BE60024E008;
+			productRefGroup = 171517EC29DC8BE80024E008 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				171517EA29DC8BE80024E008 /* StayFocused (iOS) */,
+				171517FC29DC8BE80024E008 /* StayFocused (macOS) */,
+				1715180829DC8BE80024E008 /* StayFocused Extension (iOS) */,
+				1715181229DC8BE80024E008 /* StayFocused Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		171517E929DC8BE80024E008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1715181C29DC8BE80024E008 /* Icon.png in Resources */,
+				171517F429DC8BE80024E008 /* LaunchScreen.storyboard in Resources */,
+				1715181A29DC8BE80024E008 /* Main.html in Resources */,
+				1715182029DC8BE80024E008 /* Script.js in Resources */,
+				1715182429DC8BE80024E008 /* Assets.xcassets in Resources */,
+				171517F729DC8BE80024E008 /* Main.storyboard in Resources */,
+				1715181E29DC8BE80024E008 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171517FB29DC8BE80024E008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1715181D29DC8BE80024E008 /* Icon.png in Resources */,
+				1715181F29DC8BE80024E008 /* Style.css in Resources */,
+				1715180329DC8BE80024E008 /* Main.storyboard in Resources */,
+				1715182129DC8BE80024E008 /* Script.js in Resources */,
+				1715182529DC8BE80024E008 /* Assets.xcassets in Resources */,
+				1715181B29DC8BE80024E008 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1715180729DC8BE80024E008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1715182E29DC8BE80024E008 /* background.js in Resources */,
+				1715183429DC8BE80024E008 /* popup.css in Resources */,
+				1715183229DC8BE80024E008 /* popup.html in Resources */,
+				1715182A29DC8BE80024E008 /* images in Resources */,
+				1715182C29DC8BE80024E008 /* manifest.json in Resources */,
+				1715182829DC8BE80024E008 /* _locales in Resources */,
+				1715183029DC8BE80024E008 /* content.js in Resources */,
+				1715183629DC8BE80024E008 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1715181129DC8BE80024E008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1715182F29DC8BE80024E008 /* background.js in Resources */,
+				1715183529DC8BE80024E008 /* popup.css in Resources */,
+				1715183329DC8BE80024E008 /* popup.html in Resources */,
+				1715182B29DC8BE80024E008 /* images in Resources */,
+				1715182D29DC8BE80024E008 /* manifest.json in Resources */,
+				1715182929DC8BE80024E008 /* _locales in Resources */,
+				1715183129DC8BE80024E008 /* content.js in Resources */,
+				1715183729DC8BE80024E008 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		171517E729DC8BE80024E008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1715182229DC8BE80024E008 /* ViewController.swift in Sources */,
+				171517EF29DC8BE80024E008 /* AppDelegate.swift in Sources */,
+				171517F129DC8BE80024E008 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171517F929DC8BE80024E008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1715182329DC8BE80024E008 /* ViewController.swift in Sources */,
+				1715180029DC8BE80024E008 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1715180529DC8BE80024E008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1715182629DC8BE80024E008 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1715180F29DC8BE80024E008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1715182729DC8BE80024E008 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1715180C29DC8BE80024E008 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1715180829DC8BE80024E008 /* StayFocused Extension (iOS) */;
+			targetProxy = 1715180B29DC8BE80024E008 /* PBXContainerItemProxy */;
+		};
+		1715181629DC8BE80024E008 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1715181229DC8BE80024E008 /* StayFocused Extension (macOS) */;
+			targetProxy = 1715181529DC8BE80024E008 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		171517D529DC8BE60024E008 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				171517D629DC8BE60024E008 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		171517F229DC8BE80024E008 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				171517F329DC8BE80024E008 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		171517F529DC8BE80024E008 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				171517F629DC8BE80024E008 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1715180129DC8BE80024E008 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1715180229DC8BE80024E008 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1715183829DC8BE80024E008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1715183929DC8BE80024E008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1715183B29DC8BE80024E008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JU98K7JYH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "StayFocused Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nikolas.StayFocused.Extension;
+				PRODUCT_NAME = "StayFocused Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1715183C29DC8BE80024E008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JU98K7JYH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "StayFocused Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nikolas.StayFocused.Extension;
+				PRODUCT_NAME = "StayFocused Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1715183F29DC8BE80024E008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JU98K7JYH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = StayFocused;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nikolas.StayFocused;
+				PRODUCT_NAME = StayFocused;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1715184029DC8BE80024E008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JU98K7JYH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = StayFocused;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nikolas.StayFocused;
+				PRODUCT_NAME = StayFocused;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1715184229DC8BE80024E008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/StayFocused.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JU98K7JYH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "StayFocused Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nikolas.StayFocused.Extension;
+				PRODUCT_NAME = "StayFocused Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1715184329DC8BE80024E008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/StayFocused.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JU98K7JYH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "StayFocused Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nikolas.StayFocused.Extension;
+				PRODUCT_NAME = "StayFocused Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1715184629DC8BE80024E008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/StayFocused.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JU98K7JYH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = StayFocused;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nikolas.StayFocused;
+				PRODUCT_NAME = StayFocused;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1715184729DC8BE80024E008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/StayFocused.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JU98K7JYH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = StayFocused;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nikolas.StayFocused;
+				PRODUCT_NAME = StayFocused;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		171517D229DC8BE60024E008 /* Build configuration list for PBXProject "StayFocused" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1715183829DC8BE80024E008 /* Debug */,
+				1715183929DC8BE80024E008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1715183A29DC8BE80024E008 /* Build configuration list for PBXNativeTarget "StayFocused Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1715183B29DC8BE80024E008 /* Debug */,
+				1715183C29DC8BE80024E008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1715183E29DC8BE80024E008 /* Build configuration list for PBXNativeTarget "StayFocused (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1715183F29DC8BE80024E008 /* Debug */,
+				1715184029DC8BE80024E008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1715184129DC8BE80024E008 /* Build configuration list for PBXNativeTarget "StayFocused Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1715184229DC8BE80024E008 /* Debug */,
+				1715184329DC8BE80024E008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1715184529DC8BE80024E008 /* Build configuration list for PBXNativeTarget "StayFocused (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1715184629DC8BE80024E008 /* Debug */,
+				1715184729DC8BE80024E008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 171517CF29DC8BE60024E008 /* Project object */;
+}
